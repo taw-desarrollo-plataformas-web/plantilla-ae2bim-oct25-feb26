@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>-Plantilla Landing - Demo</title>
+
+  <!-- Fuente opcional (puede quitarse) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="hoja.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">U</span>
+        <span>Mi Landing</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a class="nav-link" href="#oferta">Oferta</a></li>
+          <li><a class="nav-link" href="#beneficios">Beneficios</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="#contacto">Ingresar</a>
+        <a class="btn btn-primary" href="#oferta">Matricúlate</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker"><span class="dot"></span> Plantilla HTML5 + jQuery</div>
+
+          <h1>
+            Un diseño <span class="hl-yellow">moderno</span>
+            para proyectos académicos
+          </h1>
+
+          <p class="subtitle">
+            Paleta institucional, tarjetas limpias y FAQ interactivo con jQuery.
+            Sin estilos inline, listo para que sus estudiantes lo adapten.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#beneficios">Ver beneficios</a>
+            <a class="btn btn-outline" href="#contacto">Contactar</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Tarjeta destacada">
+          <div class="badge">THE · Online Learning</div>
+          <div class="big">#1</div>
+          <p class="card-text">
+            Jerarquía visual (azul), acento principal (amarillo) y detalles (magenta).
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <h2 class="section-title">Beneficios del diseño</h2>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">A</div>
+            <h3>Accesible y claro</h3>
+            <p>Tipografía limpia, contraste y espaciado correcto para lectura.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">R</div>
+            <h3>Responsive</h3>
+            <p>En pantallas pequeñas las secciones se apilan sin romper el diseño.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">C</div>
+            <h3>Paleta consistente</h3>
+            <p>Variables CSS para mantener identidad visual y rapidez al editar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="oferta">
+      <div class="container">
+        <h2 class="section-title">Oferta / Secciones sugeridas</h2>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">1</div>
+            <h3>Programas</h3>
+            <p>Tarjetas de carreras/cursos con detalles y botón de acción.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">2</div>
+            <h3>Testimonios</h3>
+            <p>Citas cortas para practicar componentes de UI y estilos.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">3</div>
+            <h3>FAQ interactivo</h3>
+            <p>Acordeón con jQuery: útil para practicar eventos y animaciones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="tabla">
+      <div class="container">
+        <h2 class="section-title">Programas académicos</h2>
+
+        <div class="table-wrapper">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Programa</th>
+                <th>Modalidad</th>
+                <th>Duración</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>INF-01</td>
+                <td>Ingeniería en Sistemas</td>
+                <td>Presencial</td>
+                <td>8 semestres</td>
+                <td class="status active">Activo</td>
+              </tr>
+              <tr>
+                <td>INF-02</td>
+                <td>Ciencia de Datos</td>
+                <td>Híbrida</td>
+                <td>6 semestres</td>
+                <td class="status active">Activo</td>
+              </tr>
+              <tr>
+                <td>INF-03</td>
+                <td>Desarrollo Web</td>
+                <td>Virtual</td>
+                <td>4 semestres</td>
+                <td class="status inactive">Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes (FAQ)</h2>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              ¿Cómo cambio los colores sin tocar todo el CSS?
+              <span class="chev">⌄</span>
+            </button>
+            <div class="faq-a">
+              Edite las variables CSS dentro de <code>:root</code> (por ejemplo <code>--blue</code>, <code>--yellow</code>, <code>--magenta</code>).
+              Eso actualiza automáticamente todo el sitio.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              ¿Qué parte usa jQuery?
+              <span class="chev">⌄</span>
+            </button>
+            <div class="faq-a">
+              Se usa jQuery para el scroll suave (anclas), el acordeón del FAQ y el manejo del formulario (demo).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              ¿Puedo duplicar tarjetas y crear más secciones?
+              <span class="chev">⌄</span>
+            </button>
+            <div class="faq-a">
+              Sí. Duplique componentes como <code>.card</code> y rejillas como <code>.grid-3</code>.
+              Mantenga los nombres de clase para conservar el estilo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="grid-contact">
+          <div class="card">
+            <h3>Formulario (demo)</h3>
+            <p>Interacción y validación básica y mensaje de envío.</p>
+
+            <form id="contactForm" class="form" autocomplete="on">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" class="control" type="text" required placeholder="Ej: Ana Pérez" />
+              </div>
+
+              <div class="field">
+                <label for="email">Correo</label>
+                <input id="email" class="control" type="email" required placeholder="correo@ejemplo.com" />
+              </div>
+
+              <div class="field">
+                <label for="message">Mensaje</label>
+                <textarea id="message" class="control textarea" required placeholder="Escriba su consulta..."></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              <div id="formAlert" class="alert" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="icon icon-yellow">@</div>
+            <h3>Correo</h3>
+            <p>contacto@misitio.edu.ec</p>
+          </div>
+
+          <div class="card">
+            <div class="icon icon-magenta">☎</div>
+            <h3>Teléfono</h3>
+            <p>+593 00 000 0000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Mi Landing · HTML5 + CSS  / Académico</div>
+      <div>Paleta: #03426e · #e6b224 · #9c154d</div>
+    </div>
+  </footer>
+
+  </body>
+</html>
